@@ -1,0 +1,31 @@
+/* Slider.css */
+.ss {
+    width: 100%;
+    margin-top: 3.5%;
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height based on aspect ratio */
+  }
+  
+  .slider-container img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .slider-container {
+      height: 200px; /* Adjust height for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider-container {
+      height: 150px; /* Further adjust height for very small screens */
+    }
+  }
+  

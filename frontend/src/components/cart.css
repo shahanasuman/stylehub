@@ -1,0 +1,184 @@
+/* Overall cart page styles */
+.aaa {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.watch {
+  margin-top: 20px;
+}
+
+.watch h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+/* Product image and description */
+table td div {
+  display: flex;
+  align-items: center;
+}
+
+table td div img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+/* Quantity control */
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: lightgray;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.quantity-control span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+/* Remove and Buy Now buttons */
+.order {
+  margin-top: 20px;
+}
+
+.order button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order button:hover {
+  background-color: darkorange;
+}
+
+/* Style for Remove and Buy Now buttons */
+button.remove-button, button.buy-now-button {
+  padding: 8px 16px;
+  background-color: lightyellow;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-button:hover, button.buy-now-button:hover {
+  background-color: #ffd700; /* Brighter shade of yellow on hover */
+}
+
+/* Adjust spacing for product column */
+td.product-column {
+  padding: 16px;
+  text-align: left;
+}
+
+/* Standard spacing for other columns */
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  table td img {
+      width: 80px; /* Slightly smaller images on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .watch h1 {
+      font-size: 24px; /* Smaller font size for smaller screens */
+  }
+
+  table {
+      font-size: 14px; /* Adjust table font size */
+  }
+
+  table td, table th {
+      padding: 8px; /* Reduced padding for smaller screens */
+  }
+
+  table td div {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: flex-start;
+  }
+
+  table td div img {
+      width: 100%; /* Make images responsive */
+      margin-bottom: 10px; /* Spacing between image and text */
+  }
+
+  .quantity-control {
+      flex-direction: column; /* Stack quantity controls vertically */
+  }
+
+  .quantity-control button {
+      width: 100%; /* Full width buttons */
+      padding: 10px;
+  }
+
+  .order button {
+      width: 100%; /* Full width button */
+      padding: 15px;
+      font-size: 18px; /* Larger font size for easier clicking */
+  }
+}
+
+@media (max-width: 480px) {
+  .watch h1 {
+      font-size: 20px; /* Smaller font size for very small screens */
+  }
+
+  table {
+      font-size: 12px; /* Further reduced table font size */
+  }
+
+  table td, table th {
+      padding: 6px; /* Further reduced padding */
+  }
+
+  .quantity-control button {
+      padding: 8px;
+      font-size: 14px; /* Smaller font size for buttons */
+  }
+
+  .order button {
+      padding: 12px;
+      font-size: 16px; /* Smaller font size for buttons */
+  }
+}

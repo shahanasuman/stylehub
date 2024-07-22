@@ -1,0 +1,117 @@
+/* Reset default styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* Container for the entire page */
+.order-summary-page {
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading styles */
+.order-summary-page h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Table container to handle horizontal scrolling */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table styles */
+.order-summary-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Table header and cell styles */
+.order-summary-page th, .order-summary-page td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.order-summary-page th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Row styles */
+.order-summary-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Prevent long text from breaking table layout */
+.order-summary-page td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Button styles */
+.order-summary-page button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.order-summary-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+  .order-summary-page h2 {
+    font-size: 20px;
+  }
+
+  .order-summary-page table {
+    font-size: 12px;
+  }
+
+  .order-summary-page th, .order-summary-page td {
+    padding: 10px;
+  }
+
+  .order-summary-page button {
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 480px) {
+  .order-summary-page h2 {
+    font-size: 18px;
+  }
+
+  .order-summary-page table {
+    font-size: 10px;
+  }
+
+  .order-summary-page th, .order-summary-page td {
+    padding: 8px;
+  }
+
+  .order-summary-page button {
+    padding: 6px 12px;
+  }
+}

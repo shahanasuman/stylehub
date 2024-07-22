@@ -1,0 +1,84 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* White background for the entire screen */
+}
+
+.all-orders-page {
+  margin-top: 4%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Full width */
+  padding: 0 10px; /* Add some padding for smaller screens */
+}
+
+.user-orders {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Max width to prevent it from getting too wide */
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow-x: auto; /* Add horizontal scroll for large tables */
+}
+
+.user-orders h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.user-orders table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-orders th, .user-orders td {
+  padding: 10px; /* Adjust padding for smaller screens */
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px; /* Slightly smaller font size for smaller screens */
+}
+
+.user-orders th {
+  background-color: #e0e0e0; /* Light gray for header */
+  color: #333;
+}
+
+.user-orders tr:nth-child(even) {
+  background-color: #f2f2f2; /* Even row background */
+}
+
+/* Responsive design for tablets and larger phones */
+@media screen and (max-width: 768px) {
+  .user-orders th, .user-orders td {
+      font-size: 12px; /* Smaller font size for smaller devices */
+      padding: 8px; /* Adjust padding for smaller devices */
+  }
+}
+
+/* Responsive design for mobile phones */
+@media screen and (max-width: 480px) {
+  .all-orders-page {
+      padding: 0; /* Remove padding for very small screens */
+  }
+
+  .user-orders {
+      padding: 10px; /* Less padding for very small screens */
+  }
+
+  .user-orders h3 {
+      font-size: 20px; /* Smaller font size for very small screens */
+  }
+
+  .user-orders table {
+      font-size: 12px; /* Smaller font size for tables on very small screens */
+  }
+}

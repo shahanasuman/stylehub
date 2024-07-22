@@ -1,0 +1,95 @@
+/* Home.css */
+
+/* Add viewport meta tag */
+/* Add viewport meta tag */
+.aa {
+    background-color:lightgrey; /* Changed background color to a light grey */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.bb {
+    background-color:cadetblue;
+    padding: 10px; /* Adjusted padding for better spacing */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 20px;
+    padding: 2px;
+    cursor: pointer;
+    color: #fff; /* Changed text color to white */
+}
+
+.nav h2:hover {
+    color: grey; /* Changed color on hover */
+}
+
+.search {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px 10px; /* Adjusted padding */
+    border-radius: 10px;
+}
+
+.products {
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #fff; /* Changed border color to white */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Changed background color to white */
+    display: inline-block;
+}
+
+h1 {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.buttonStyle,
+.buttonStyle1 {
+    padding: 10px 20px; /* Adjusted padding */
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.buttonStyle:hover{ background-color:lightskyblue; /* Changed background color on hover */
+    color: #fff;}
+.buttonStyle1:hover {
+    background-color: red; /* Changed background color on hover */
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .bb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .search {
+        max-width: 200px; /* Adjust max-width for smaller screens */
+        padding: 7px; /* Adjust padding for smaller screens */
+    }
+
+    .products {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}

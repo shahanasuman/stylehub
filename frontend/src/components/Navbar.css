@@ -1,0 +1,140 @@
+.navbar {
+    padding: 10px 0;
+    z-index: 1; /* Ensure navbar appears on top of other elements */
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: cadetblue;
+    color: white;
+    position: fixed;
+    transition: top 0.3s;
+    height: 40px; /* Increased height for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    cursor: pointer;
+    font-size: 1.5rem; /* Increased font size for visibility */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links h2 {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1rem; /* Increased font size for visibility */
+}
+
+.nav-links img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative; /* Added to position item count correctly */
+}
+
+.icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.item-count {
+    position: absolute;
+    top: -10px; /* Adjust this value to align the count correctly */
+    right: -10px; /* Adjust this value to align the count correctly */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.login-btn,
+.logout-btn,
+.admin-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.admin-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust this value based on navbar height */
+        right: 0;
+        background-color: cadetblue;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+
+    .nav-links.open {
+        height: auto;
+    }
+
+    .nav-toggle {
+        display: block; /* Show toggle button on mobile */
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        z-index: 2; /* Ensure the toggle button is above other elements */
+    }
+
+    .nav-links h2,
+    .nav-links a {
+        font-size: 1rem; /* Adjust font size for mobile */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links h2 {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}

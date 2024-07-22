@@ -1,0 +1,48 @@
+.admin-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust background color as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  .navbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+  }
+  
+  .title {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #333; /* Adjust text color */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+    margin-right: 1rem; /* Adjust spacing between links */
+  }
+  
+  .logout-button {
+    background-color: #f44336; /* Adjust button color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f; /* Adjust button hover color */
+  }
+  

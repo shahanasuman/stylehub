@@ -1,0 +1,105 @@
+/* Buy Page Styles */
+.buy-page {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Address Options Section */
+.address-options {
+  margin-bottom: 20px;
+}
+
+.address-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.address-options label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-options button {
+  background-color: lightblue;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.address-options button:hover {
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+/* Address Form Styles */
+.address-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.address-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.address-form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.address-form button:hover {
+  background-color: #45a049;
+}
+
+/* Order Summary Table */
+.order-summary {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-summary th, .order-summary td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.order-summary th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.order-summary td img {
+  width: 100px;
+  height: auto;
+}
+
+/* Place Order Button */
+.place-order-button {
+  background-color: orange;
+  font-size: large;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
